@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_address"
+            android:icon="@drawable/logo"
+            android:title="my address" />
+        <item
+            android:id="@+id/verification"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="verification" />
+        <item
+            android:id="@+id/statement"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="statement" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="profile" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/action_settings" />
+            <item
+                android:id="@+id/support"
+                android:icon="@drawable/ic_menu_send"
+                android:title="support" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:title="Cast"
+        app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider"
+        tools:icon="@drawable/mr_button_light" />
+
+</menu>
